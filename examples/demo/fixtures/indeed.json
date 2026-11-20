@@ -1,0 +1,86 @@
+[
+ {
+  "id": "I1",
+  "title": {
+   "text": "Platform Engineer - Developer Experience"
+  },
+  "company": {
+   "name": "DevTools Inc"
+  },
+  "location": {
+   "formatted": "Bengaluru, Karnataka"
+  },
+  "urls": {
+   "indeed": "https://in.indeed.com/viewjob?jk=I1"
+  },
+  "dates": {
+   "posted": "10 hours ago"
+  },
+  "description": {
+   "text": "Build and own our internal developer platform on Kubernetes. Write Go operators and controllers (kubebuilder). GitOps with ArgoCD, Terraform, Helm, Vault. Prometheus and OpenTelemetry. Must have strong experience in Java. 8+ years. Backstage IDP."
+  }
+ },
+ {
+  "id": "I2",
+  "title": {
+   "text": "SAP Commerce Solution Consultant"
+  },
+  "company": {
+   "name": "Retail Co"
+  },
+  "location": {
+   "formatted": "Bengaluru, Karnataka"
+  },
+  "urls": {
+   "indeed": "https://in.indeed.com/viewjob?jk=I2"
+  },
+  "dates": {
+   "posted": "3 hours ago"
+  },
+  "description": {
+   "text": "Lead SAP Commerce (Hybris) D2C rollouts and go-live. Own solution design with stakeholders. Headless migration to commercetools and Contentstack CMS. GraphQL integrations. Agile, JIRA. 10+ years e-commerce. QA and UAT coordination. Checkout and payment gateway flows."
+  }
+ },
+ {
+  "id": "I3",
+  "title": {
+   "text": "Senior Java Developer"
+  },
+  "company": {
+   "name": "DevCo"
+  },
+  "location": {
+   "formatted": "Bengaluru, Karnataka"
+  },
+  "urls": {
+   "indeed": "https://in.indeed.com/viewjob?jk=I3"
+  },
+  "dates": {
+   "posted": "4 hours ago"
+  },
+  "description": {
+   "text": "Spring Boot microservices for checkout business logic, React frontend, full stack. Kubernetes, AWS, Python. 7-12 years."
+  }
+ },
+ {
+  "id": "I4",
+  "title": {
+   "text": "QA Lead eCommerce"
+  },
+  "company": {
+   "name": "ShopCo2"
+  },
+  "location": {
+   "formatted": "Remote"
+  },
+  "urls": {
+   "indeed": "https://in.indeed.com/viewjob?jk=I4"
+  },
+  "dates": {
+   "posted": "20 hours ago"
+  },
+  "description": {
+   "text": "Own test strategy and STLC for our ecommerce storefront. UAT, regression testing, defect management. Agile scrum with JIRA. Must have hands-on Selenium automation framework experience and ISTQB certification is mandatory. 12-18 years."
+  }
+ }
+]

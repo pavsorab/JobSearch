@@ -1,0 +1,65 @@
+{
+  "_note": "Template: actors and fixed knobs only. `jptools.py build-inputs` fills queries, location, experience and exclusions from profile.json. Server freshness filters are the nearest coarse bucket >= 48h; code trims to 48h.",
+  "linkedin": {
+    "_actor": "cheap_scraper/linkedin-job-scraper",
+    "workplaceType": [
+      "on-site",
+      "hybrid",
+      "remote"
+    ],
+    "publishedAt": "r604800",
+    "jobType": [
+      "full-time"
+    ],
+    "excludeRecruitingAgencies": true,
+    "saveOnlyUniqueItems": true,
+    "enrichCompanyData": true,
+    "maxItems": 150
+  },
+  "naukri_pass1": {
+    "_actor": "blackfalcondata/naukri-jobs-feed",
+    "wfhType": [
+      "remote",
+      "hybrid"
+    ],
+    "freshness": 3,
+    "postedBy": "Company",
+    "companyType": [
+      "213",
+      "217",
+      "62",
+      "60"
+    ],
+    "sortBy": "date",
+    "skipReposts": true,
+    "incremental": true,
+    "fetchDetails": false,
+    "compact": true,
+    "excludeEmptyFields": true,
+    "maxResults": 120
+  },
+  "naukri_pass2_template": {
+    "_note": "survivors only — jobIds come from triage.json where triage_priority == primary",
+    "jobIds": [],
+    "fetchDetails": true,
+    "compact": true,
+    "descriptionMaxLength": 4000
+  },
+  "indeed": {
+    "_actor": "kaix/indeed-scraper",
+    "country": "IN",
+    "fromDays": "3",
+    "sort": "date",
+    "maxItems": 100,
+    "_search_note": "Local wrapper runs each query separately at this location and merges results. keyword is the legacy fallback. Boolean interpretation must be verified against live actor behavior."
+  },
+  "indeed_remote_pass": {
+    "_note": "second cheap pass, no 150-item floor on Indeed; merge into the same dedupe. jobType removed for the same reason as the main indeed pass.",
+    "location": "Remote",
+    "country": "IN",
+    "fromDays": "3",
+    "sort": "date",
+    "maxItems": 100,
+    "_search_note": "Local wrapper runs each query separately at this location and merges results. keyword is the legacy fallback. Boolean interpretation must be verified against live actor behavior."
+  }
+}

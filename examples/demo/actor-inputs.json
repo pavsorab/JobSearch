@@ -1,0 +1,290 @@
+{
+  "_note": "Template: actors and fixed knobs only. `jptools.py build-inputs` fills queries, location, experience and exclusions from profile.json. Server freshness filters are the nearest coarse bucket >= 48h; code trims to 48h.",
+  "linkedin": {
+    "_actor": "cheap_scraper/linkedin-job-scraper",
+    "workplaceType": [
+      "on-site",
+      "hybrid",
+      "remote"
+    ],
+    "publishedAt": "r604800",
+    "jobType": [
+      "full-time"
+    ],
+    "excludeRecruitingAgencies": true,
+    "saveOnlyUniqueItems": true,
+    "enrichCompanyData": true,
+    "maxItems": 150,
+    "keyword": [
+      "platform engineer",
+      "site reliability engineer kubernetes",
+      "devops engineer kubernetes gitops",
+      "kubernetes software engineer",
+      "(\"platform engineer\" OR \"platform engineering\" OR \"developer platform\" OR \"developer experience\" OR \"developer productivity\" OR \"internal developer platform\") AND Kubernetes",
+      "Kubernetes AND (Go OR Golang) AND (operator OR operators OR controller OR controllers OR CRD OR \"custom resources\" OR \"control plane\" OR kubebuilder OR \"controller-runtime\")",
+      "Kubernetes AND (CKS OR \"Kubernetes security\" OR DevSecOps OR Checkov OR \"policy as code\" OR SBOM OR \"software supply chain\")",
+      "Kubernetes AND (GitOps OR ArgoCD OR \"Argo CD\" OR \"golden path\" OR \"paved road\" OR \"self-service\") AND (platform OR developer OR delivery)",
+      "(\"release engineer\" OR \"release engineering\" OR \"build engineer\" OR \"developer tooling\" OR \"engineering productivity\") AND (\"GitHub Actions\" OR \"CI/CD\" OR GitOps)",
+      "(Go OR Golang) AND Kubernetes AND (\"software engineer\" OR \"software development\" OR \"member of technical staff\" OR \"infrastructure software\")",
+      "Kubernetes AND (KEDA OR \"GPU autoscaling\" OR \"inference platform\" OR \"inference infrastructure\" OR \"GPU infrastructure\")",
+      "Kubernetes AND (Kubestronaut OR CKA OR CKS) AND (platform OR security OR infrastructure)"
+    ],
+    "locations": [
+      "Bengaluru, Karnataka, India"
+    ],
+    "jobTitleExclude": [
+      "intern",
+      "junior",
+      "trainee",
+      "manager",
+      "director",
+      "head",
+      "vp",
+      "analyst",
+      "consultant",
+      "support",
+      "administrator"
+    ],
+    "companyExclude": [
+      "Example Motors"
+    ],
+    "experienceLevel": [
+      "mid-senior",
+      "director"
+    ],
+    "resumeKeywords": [
+      {
+        "keyword": "kubernetes",
+        "aliases": [
+          "k8s",
+          "eks",
+          "aks",
+          "gke",
+          "cka",
+          "cks"
+        ]
+      },
+      {
+        "keyword": "argocd",
+        "aliases": [
+          "argo cd",
+          "gitops",
+          "flux",
+          "argo rollouts"
+        ]
+      },
+      {
+        "keyword": "terraform",
+        "aliases": [
+          "iac",
+          "infrastructure as code",
+          "pulumi"
+        ]
+      },
+      {
+        "keyword": "github actions",
+        "aliases": [
+          "ci/cd",
+          "cicd",
+          "jenkins",
+          "gitlab ci",
+          "azure devops"
+        ]
+      },
+      {
+        "keyword": "Go",
+        "aliases": [
+          "golang",
+          "Golang"
+        ]
+      },
+      {
+        "keyword": "python",
+        "aliases": []
+      },
+      {
+        "keyword": "helm",
+        "aliases": [
+          "kustomize",
+          "manifests"
+        ]
+      },
+      {
+        "keyword": "vault",
+        "aliases": [
+          "hashicorp vault",
+          "secrets management",
+          "sops"
+        ]
+      },
+      {
+        "keyword": "prometheus",
+        "aliases": [
+          "grafana",
+          "opentelemetry",
+          "otel",
+          "datadog",
+          "observability"
+        ]
+      },
+      {
+        "keyword": "platform engineering",
+        "aliases": [
+          "platform engineer",
+          "developer platform",
+          "backstage",
+          "internal developer platform",
+          "idp",
+          "developer experience",
+          "devex",
+          "developer productivity"
+        ]
+      },
+      {
+        "keyword": "sbom",
+        "aliases": [
+          "slsa",
+          "sigstore",
+          "devsecops",
+          "supply chain security"
+        ]
+      },
+      {
+        "keyword": "operator",
+        "aliases": [
+          "controller",
+          "crd",
+          "kubebuilder",
+          "controller-runtime",
+          "client-go",
+          "control plane",
+          "reconciler"
+        ]
+      }
+    ]
+  },
+  "naukri_pass1": {
+    "_actor": "blackfalcondata/naukri-jobs-feed",
+    "wfhType": [
+      "remote",
+      "hybrid"
+    ],
+    "freshness": 3,
+    "postedBy": "Company",
+    "companyType": [
+      "213",
+      "217",
+      "62",
+      "60"
+    ],
+    "sortBy": "date",
+    "skipReposts": true,
+    "incremental": true,
+    "fetchDetails": false,
+    "compact": true,
+    "excludeEmptyFields": true,
+    "maxResults": 120,
+    "searchQueries": [
+      "platform engineer",
+      "devops engineer kubernetes",
+      "site reliability engineer",
+      "cloud platform engineer",
+      "infrastructure engineer kubernetes",
+      "(\"platform engineer\" OR \"platform engineering\" OR \"developer platform\" OR \"developer experience\" OR \"developer productivity\" OR \"internal developer platform\") AND Kubernetes",
+      "Kubernetes AND (Go OR Golang) AND (operator OR operators OR controller OR controllers OR CRD OR \"custom resources\" OR \"control plane\" OR kubebuilder OR \"controller-runtime\")",
+      "Kubernetes AND (CKS OR \"Kubernetes security\" OR DevSecOps OR Checkov OR \"policy as code\" OR SBOM OR \"software supply chain\")",
+      "Kubernetes AND (GitOps OR ArgoCD OR \"Argo CD\" OR \"golden path\" OR \"paved road\" OR \"self-service\") AND (platform OR developer OR delivery)",
+      "(\"release engineer\" OR \"release engineering\" OR \"build engineer\" OR \"developer tooling\" OR \"engineering productivity\") AND (\"GitHub Actions\" OR \"CI/CD\" OR GitOps)",
+      "(Go OR Golang) AND Kubernetes AND (\"software engineer\" OR \"software development\" OR \"member of technical staff\" OR \"infrastructure software\")",
+      "Kubernetes AND (KEDA OR \"GPU autoscaling\" OR \"inference platform\" OR \"inference infrastructure\" OR \"GPU infrastructure\")",
+      "Kubernetes AND (Kubestronaut OR CKA OR CKS) AND (platform OR security OR infrastructure)"
+    ],
+    "cityTypeGid": 97,
+    "experienceMin": 8,
+    "experienceMax": 15,
+    "stateKey": "alex-example-platform"
+  },
+  "naukri_pass2_template": {
+    "_note": "survivors only — jobIds come from triage.json where triage_priority == primary",
+    "jobIds": [],
+    "fetchDetails": true,
+    "compact": true,
+    "descriptionMaxLength": 4000
+  },
+  "indeed": {
+    "_actor": "kaix/indeed-scraper",
+    "country": "IN",
+    "fromDays": "3",
+    "sort": "date",
+    "maxItems": 100,
+    "_search_note": "Local wrapper runs each query separately at this location and merges results. keyword is the legacy fallback. Boolean interpretation must be verified against live actor behavior.",
+    "keyword": "platform engineer kubernetes",
+    "_searchQueries": [
+      "platform engineer kubernetes",
+      "(\"platform engineer\" OR \"platform engineering\" OR \"developer platform\" OR \"developer experience\" OR \"developer productivity\" OR \"internal developer platform\") AND Kubernetes",
+      "Kubernetes AND (Go OR Golang) AND (operator OR operators OR controller OR controllers OR CRD OR \"custom resources\" OR \"control plane\" OR kubebuilder OR \"controller-runtime\")",
+      "Kubernetes AND (CKS OR \"Kubernetes security\" OR DevSecOps OR Checkov OR \"policy as code\" OR SBOM OR \"software supply chain\")",
+      "Kubernetes AND (GitOps OR ArgoCD OR \"Argo CD\" OR \"golden path\" OR \"paved road\" OR \"self-service\") AND (platform OR developer OR delivery)",
+      "(\"release engineer\" OR \"release engineering\" OR \"build engineer\" OR \"developer tooling\" OR \"engineering productivity\") AND (\"GitHub Actions\" OR \"CI/CD\" OR GitOps)",
+      "(Go OR Golang) AND Kubernetes AND (\"software engineer\" OR \"software development\" OR \"member of technical staff\" OR \"infrastructure software\")",
+      "Kubernetes AND (KEDA OR \"GPU autoscaling\" OR \"inference platform\" OR \"inference infrastructure\" OR \"GPU infrastructure\")",
+      "Kubernetes AND (Kubestronaut OR CKA OR CKS) AND (platform OR security OR infrastructure)"
+    ],
+    "location": "Bengaluru, Karnataka"
+  },
+  "indeed_remote_pass": {
+    "_note": "second cheap pass, no 150-item floor on Indeed; merge into the same dedupe. jobType removed for the same reason as the main indeed pass.",
+    "location": "Remote",
+    "country": "IN",
+    "fromDays": "3",
+    "sort": "date",
+    "maxItems": 100,
+    "_search_note": "Local wrapper runs each query separately at this location and merges results. keyword is the legacy fallback. Boolean interpretation must be verified against live actor behavior.",
+    "keyword": "platform engineer kubernetes",
+    "_searchQueries": [
+      "platform engineer kubernetes",
+      "(\"platform engineer\" OR \"platform engineering\" OR \"developer platform\" OR \"developer experience\" OR \"developer productivity\" OR \"internal developer platform\") AND Kubernetes",
+      "Kubernetes AND (Go OR Golang) AND (operator OR operators OR controller OR controllers OR CRD OR \"custom resources\" OR \"control plane\" OR kubebuilder OR \"controller-runtime\")",
+      "Kubernetes AND (CKS OR \"Kubernetes security\" OR DevSecOps OR Checkov OR \"policy as code\" OR SBOM OR \"software supply chain\")",
+      "Kubernetes AND (GitOps OR ArgoCD OR \"Argo CD\" OR \"golden path\" OR \"paved road\" OR \"self-service\") AND (platform OR developer OR delivery)",
+      "(\"release engineer\" OR \"release engineering\" OR \"build engineer\" OR \"developer tooling\" OR \"engineering productivity\") AND (\"GitHub Actions\" OR \"CI/CD\" OR GitOps)",
+      "(Go OR Golang) AND Kubernetes AND (\"software engineer\" OR \"software development\" OR \"member of technical staff\" OR \"infrastructure software\")",
+      "Kubernetes AND (KEDA OR \"GPU autoscaling\" OR \"inference platform\" OR \"inference infrastructure\" OR \"GPU infrastructure\")",
+      "Kubernetes AND (Kubestronaut OR CKA OR CKS) AND (platform OR security OR infrastructure)"
+    ]
+  },
+  "_search_families": [
+    {
+      "id": "platform_developer_productivity",
+      "query": "(\"platform engineer\" OR \"platform engineering\" OR \"developer platform\" OR \"developer experience\" OR \"developer productivity\" OR \"internal developer platform\") AND Kubernetes"
+    },
+    {
+      "id": "kubernetes_operators",
+      "query": "Kubernetes AND (Go OR Golang) AND (operator OR operators OR controller OR controllers OR CRD OR \"custom resources\" OR \"control plane\" OR kubebuilder OR \"controller-runtime\")"
+    },
+    {
+      "id": "platform_supply_chain_security",
+      "query": "Kubernetes AND (CKS OR \"Kubernetes security\" OR DevSecOps OR Checkov OR \"policy as code\" OR SBOM OR \"software supply chain\")"
+    },
+    {
+      "id": "gitops_self_service",
+      "query": "Kubernetes AND (GitOps OR ArgoCD OR \"Argo CD\" OR \"golden path\" OR \"paved road\" OR \"self-service\") AND (platform OR developer OR delivery)"
+    },
+    {
+      "id": "release_developer_tooling",
+      "query": "(\"release engineer\" OR \"release engineering\" OR \"build engineer\" OR \"developer tooling\" OR \"engineering productivity\") AND (\"GitHub Actions\" OR \"CI/CD\" OR GitOps)"
+    },
+    {
+      "id": "infrastructure_software",
+      "query": "(Go OR Golang) AND Kubernetes AND (\"software engineer\" OR \"software development\" OR \"member of technical staff\" OR \"infrastructure software\")"
+    },
+    {
+      "id": "inference_gpu_platform",
+      "query": "Kubernetes AND (KEDA OR \"GPU autoscaling\" OR \"inference platform\" OR \"inference infrastructure\" OR \"GPU infrastructure\")"
+    },
+    {
+      "id": "kubernetes_certifications",
+      "query": "Kubernetes AND (Kubestronaut OR CKA OR CKS) AND (platform OR security OR infrastructure)"
+    }
+  ]
+}

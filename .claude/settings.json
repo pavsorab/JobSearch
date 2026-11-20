@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 jobpipe.py:*)",
+      "Bash(python3 jptools.py:*)",
+      "Bash(python3 apify_fetch.py:*)",
+      "Read(./AGENTS.md)",
+      "Read(./prompts/**)",
+      "Read(./profiles/*/candidate.md)",
+      "Read(./profiles/*/scoring-notes.md)",
+      "Read(./profiles/*/tailor-notes.md)",
+      "Read(./profiles/*/job-search-notes.md)",
+      "Read(./profiles/*/master-cv.tex)",
+      "Read(./profiles/*/runs/**/brief-*.md)"
+    ],
+    "deny": [
+      "mcp__Apify",
+      "mcp__apify",
+      "mcp__olcli__compile",
+      "mcp__olcli__download_pdf",
+      "mcp__olcli__compile_with_outputs",
+      "Bash(olcli compile:*)",
+      "Bash(pdflatex:*)",
+      "Bash(xelatex:*)",
+      "Bash(lualatex:*)",
+      "Bash(latexmk:*)",
+      "Bash(git push:*)",
+      "Read(./.env)",
+      "Read(./.claude/settings.local.json)",
+      "Read(./profiles/*/runs/**/*.json)",
+      "Read(./profiles/*/state/**)",
+      "Read(./profiles/*/results/**)"
+    ]
+  }
+}

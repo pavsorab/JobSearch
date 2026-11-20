@@ -1,0 +1,99 @@
+[
+ {
+  "jobId": "L1",
+  "jobTitle": "Senior Platform Engineer",
+  "companyName": "Acme Cloud",
+  "location": "Bengaluru, Karnataka, India",
+  "jobUrl": "https://x/L1",
+  "applyType": "EXTERNAL",
+  "postedTime": "5 hours ago",
+  "jobDescription": "Build and own our internal developer platform on Kubernetes. Write Go operators and controllers (kubebuilder). GitOps with ArgoCD, Terraform, Helm, Vault. Prometheus and OpenTelemetry. Must have strong experience in Java. 8+ years. Backstage IDP.",
+  "keywordMatchScorePercentage": 72,
+  "matchedKeywords": [
+   "Kubernetes",
+   "Go"
+  ],
+  "companyIndustry": "Software Development",
+  "companyEmployeeCount": 12000
+ },
+ {
+  "jobId": "L2",
+  "jobTitle": "Engineering Manager, Platform",
+  "companyName": "Acme Cloud",
+  "location": "Bengaluru",
+  "jobUrl": "https://x/L2",
+  "postedTime": "6 hours ago",
+  "jobDescription": "Build and own our internal developer platform on Kubernetes. Write Go operators and controllers (kubebuilder). GitOps with ArgoCD, Terraform, Helm, Vault. Prometheus and OpenTelemetry. Must have strong experience in Java. 8+ years. Backstage IDP.",
+  "keywordMatchScorePercentage": 80
+ },
+ {
+  "jobId": "L3",
+  "jobTitle": "SAP Commerce Solution Consultant",
+  "companyName": "Retail Co",
+  "location": "Greater Bengaluru Area",
+  "jobUrl": "https://x/L3",
+  "postedTime": "3 hours ago",
+  "jobDescription": "Lead SAP Commerce (Hybris) D2C rollouts and go-live. Own solution design with stakeholders. Headless migration to commercetools and Contentstack CMS. GraphQL integrations. Agile, JIRA. 10+ years e-commerce. QA and UAT coordination. Checkout and payment gateway flows.",
+  "keywordMatchScorePercentage": 64
+ },
+ {
+  "jobId": "L4",
+  "jobTitle": "Platform Engineer",
+  "companyName": "Example Motors India Private Limited",
+  "location": "Bengaluru",
+  "jobUrl": "https://x/L4",
+  "postedTime": "2 hours ago",
+  "jobDescription": "Build and own our internal developer platform on Kubernetes. Write Go operators and controllers (kubebuilder). GitOps with ArgoCD, Terraform, Helm, Vault. Prometheus and OpenTelemetry. Must have strong experience in Java. 8+ years. Backstage IDP.",
+  "keywordMatchScorePercentage": 90
+ },
+ {
+  "jobId": "L5",
+  "jobTitle": "Site Reliability Engineer",
+  "companyName": "OpsCo",
+  "location": "India",
+  "jobUrl": "https://x/L5",
+  "postedTime": "4 hours ago",
+  "jobDescription": "Join the on-call rotation, triage incidents, maintain and monitor Kubernetes clusters. Jenkins CI/CD, Python, Grafana. Immediate joiner, client requirement. 5-9 years.",
+  "keywordMatchScorePercentage": 30
+ },
+ {
+  "jobId": "L6",
+  "jobTitle": "QA Manager - eCommerce",
+  "companyName": "ShopCo",
+  "location": "Bengaluru",
+  "jobUrl": "https://x/L6",
+  "postedTime": "8 hours ago",
+  "jobDescription": "Own test strategy and STLC for our ecommerce storefront. UAT, regression testing, defect management. Agile scrum with JIRA. Must have hands-on Selenium automation framework experience and ISTQB certification is mandatory. 12-18 years.",
+  "keywordMatchScorePercentage": 55
+ },
+ {
+  "jobId": "L7",
+  "jobTitle": "Senior Software Engineer",
+  "companyName": "PayCo",
+  "location": "Remote",
+  "jobUrl": "https://x/L7",
+  "postedTime": "9 hours ago",
+  "jobDescription": "Spring Boot microservices for checkout business logic, React frontend, full stack. Kubernetes, AWS, Python. 7-12 years.",
+  "keywordMatchScorePercentage": 40
+ },
+ {
+  "jobId": "L8",
+  "jobTitle": "Platform Engineer",
+  "companyName": "Euro GmbH",
+  "location": "Berlin, Germany",
+  "jobUrl": "https://x/L8",
+  "postedTime": "1 hours ago",
+  "jobDescription": "Build and own our internal developer platform on Kubernetes. Write Go operators and controllers (kubebuilder). GitOps with ArgoCD, Terraform, Helm, Vault. Prometheus and OpenTelemetry. Must have strong experience in Java. 8+ years. Backstage IDP.",
+  "keywordMatchScorePercentage": 85
+ },
+ {
+  "jobId": "L9",
+  "jobTitle": "DevOps Engineer",
+  "companyName": "Old Co",
+  "location": "Bengaluru",
+  "jobUrl": "https://x/L9",
+  "postedTime": "80 hours ago",
+  "jobDescription": "Build and own our internal developer platform on Kubernetes. Write Go operators and controllers (kubebuilder). GitOps with ArgoCD, Terraform, Helm, Vault. Prometheus and OpenTelemetry. Must have strong experience in Java. 8+ years. Backstage IDP.",
+  "keywordMatchScorePercentage": 85
+ }
+]

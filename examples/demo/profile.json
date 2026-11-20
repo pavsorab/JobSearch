@@ -1,0 +1,393 @@
+{
+  "_note": "Edit this file to change searches, filters and tunables. Then run `python3 jptools.py build-inputs`. See README > Profile reference.",
+  "name": "Alex Example",
+  "config": {
+    "freshness_hours": 48,
+    "candidate_years": 12,
+    "drop_ceiling_at_or_below": 9,
+    "underbanded_ceilings": [
+      10,
+      11
+    ],
+    "min_keyword_groups": 3,
+    "linkedin_min_match_score": 35,
+    "primary_set_size": 15,
+    "blocked_companies": [
+      "Example Motors"
+    ],
+    "allowed_locations": [
+      "bengaluru",
+      "bangalore",
+      "remote",
+      "india"
+    ],
+    "liveness": {
+      "enabled": true,
+      "timeout_s": 15,
+      "sleep_between_s": 1.5
+    },
+    "title_match": {
+      "review_threshold": 0.75
+    }
+  },
+  "location": {
+    "linkedin": "Bengaluru, Karnataka, India",
+    "indeed": "Bengaluru, Karnataka",
+    "naukri_city_gid": 97
+  },
+  "experience": {
+    "min": 8,
+    "max": 15
+  },
+  "search": {
+    "linkedin_keywords": [
+      "platform engineer",
+      "site reliability engineer kubernetes",
+      "devops engineer kubernetes gitops",
+      "kubernetes software engineer"
+    ],
+    "naukri_keywords": [
+      "platform engineer",
+      "devops engineer kubernetes",
+      "site reliability engineer",
+      "cloud platform engineer",
+      "infrastructure engineer kubernetes"
+    ],
+    "indeed_keywords": [
+      "platform engineer kubernetes"
+    ],
+    "boolean_queries": [
+      {
+        "id": "platform_developer_productivity",
+        "query": "(\"platform engineer\" OR \"platform engineering\" OR \"developer platform\" OR \"developer experience\" OR \"developer productivity\" OR \"internal developer platform\") AND Kubernetes"
+      },
+      {
+        "id": "kubernetes_operators",
+        "query": "Kubernetes AND (Go OR Golang) AND (operator OR operators OR controller OR controllers OR CRD OR \"custom resources\" OR \"control plane\" OR kubebuilder OR \"controller-runtime\")"
+      },
+      {
+        "id": "platform_supply_chain_security",
+        "query": "Kubernetes AND (CKS OR \"Kubernetes security\" OR DevSecOps OR Checkov OR \"policy as code\" OR SBOM OR \"software supply chain\")"
+      },
+      {
+        "id": "gitops_self_service",
+        "query": "Kubernetes AND (GitOps OR ArgoCD OR \"Argo CD\" OR \"golden path\" OR \"paved road\" OR \"self-service\") AND (platform OR developer OR delivery)"
+      },
+      {
+        "id": "release_developer_tooling",
+        "query": "(\"release engineer\" OR \"release engineering\" OR \"build engineer\" OR \"developer tooling\" OR \"engineering productivity\") AND (\"GitHub Actions\" OR \"CI/CD\" OR GitOps)"
+      },
+      {
+        "id": "infrastructure_software",
+        "query": "(Go OR Golang) AND Kubernetes AND (\"software engineer\" OR \"software development\" OR \"member of technical staff\" OR \"infrastructure software\")"
+      },
+      {
+        "id": "inference_gpu_platform",
+        "query": "Kubernetes AND (KEDA OR \"GPU autoscaling\" OR \"inference platform\" OR \"inference infrastructure\" OR \"GPU infrastructure\")"
+      },
+      {
+        "id": "kubernetes_certifications",
+        "query": "Kubernetes AND (Kubestronaut OR CKA OR CKS) AND (platform OR security OR infrastructure)"
+      }
+    ],
+    "linkedin_title_exclude": [
+      "intern",
+      "junior",
+      "trainee",
+      "manager",
+      "director",
+      "head",
+      "vp",
+      "analyst",
+      "consultant",
+      "support",
+      "administrator"
+    ],
+    "linkedin_company_exclude": [
+      "Example Motors"
+    ],
+    "linkedin_experience_level": [
+      "mid-senior",
+      "director"
+    ],
+    "naukri_state_key": "alex-example-platform"
+  },
+  "keyword_groups": {
+    "Kubernetes": [
+      [
+        "kubernetes",
+        false
+      ],
+      [
+        "k8s",
+        false
+      ],
+      [
+        "eks",
+        false
+      ],
+      [
+        "aks",
+        false
+      ],
+      [
+        "gke",
+        false
+      ],
+      [
+        "cka",
+        false
+      ],
+      [
+        "cks",
+        false
+      ]
+    ],
+    "ArgoCD": [
+      [
+        "argocd",
+        false
+      ],
+      [
+        "argo cd",
+        false
+      ],
+      [
+        "gitops",
+        false
+      ],
+      [
+        "flux",
+        false
+      ],
+      [
+        "argo rollouts",
+        false
+      ]
+    ],
+    "Terraform": [
+      [
+        "terraform",
+        false
+      ],
+      [
+        "iac",
+        false
+      ],
+      [
+        "infrastructure as code",
+        false
+      ],
+      [
+        "pulumi",
+        false
+      ]
+    ],
+    "CI/CD": [
+      [
+        "github actions",
+        false
+      ],
+      [
+        "ci/cd",
+        false
+      ],
+      [
+        "cicd",
+        false
+      ],
+      [
+        "jenkins",
+        false
+      ],
+      [
+        "gitlab ci",
+        false
+      ],
+      [
+        "azure devops",
+        false
+      ]
+    ],
+    "Go": [
+      [
+        "Go",
+        true
+      ],
+      [
+        "golang",
+        false
+      ],
+      [
+        "Golang",
+        true
+      ]
+    ],
+    "Python": [
+      [
+        "python",
+        false
+      ]
+    ],
+    "Helm": [
+      [
+        "helm",
+        false
+      ],
+      [
+        "kustomize",
+        false
+      ],
+      [
+        "manifests",
+        false
+      ]
+    ],
+    "Vault": [
+      [
+        "vault",
+        false
+      ],
+      [
+        "hashicorp vault",
+        false
+      ],
+      [
+        "secrets management",
+        false
+      ],
+      [
+        "sops",
+        false
+      ]
+    ],
+    "Observability": [
+      [
+        "prometheus",
+        false
+      ],
+      [
+        "grafana",
+        false
+      ],
+      [
+        "opentelemetry",
+        false
+      ],
+      [
+        "otel",
+        false
+      ],
+      [
+        "datadog",
+        false
+      ],
+      [
+        "observability",
+        false
+      ]
+    ],
+    "PlatformEng": [
+      [
+        "platform engineering",
+        false
+      ],
+      [
+        "platform engineer",
+        false
+      ],
+      [
+        "developer platform",
+        false
+      ],
+      [
+        "backstage",
+        false
+      ],
+      [
+        "internal developer platform",
+        false
+      ],
+      [
+        "idp",
+        false
+      ],
+      [
+        "developer experience",
+        false
+      ],
+      [
+        "devex",
+        false
+      ],
+      [
+        "developer productivity",
+        false
+      ]
+    ],
+    "SupplyChain": [
+      [
+        "sbom",
+        false
+      ],
+      [
+        "slsa",
+        false
+      ],
+      [
+        "sigstore",
+        false
+      ],
+      [
+        "devsecops",
+        false
+      ],
+      [
+        "supply chain security",
+        false
+      ]
+    ],
+    "Operators": [
+      [
+        "operator",
+        false
+      ],
+      [
+        "controller",
+        false
+      ],
+      [
+        "crd",
+        false
+      ],
+      [
+        "kubebuilder",
+        false
+      ],
+      [
+        "controller-runtime",
+        false
+      ],
+      [
+        "client-go",
+        false
+      ],
+      [
+        "control plane",
+        false
+      ],
+      [
+        "reconciler",
+        false
+      ]
+    ]
+  },
+  "filters": {
+    "title_drop": "\\b(engineering manager|delivery manager|program manager|product manager|project manager|people manager|director|head of|vp |vice president|presales|pre-sales|solution sales|account )",
+    "out_of_domain": "\\b(l1|l2|noc|help ?desk|service desk|desktop support|sysadmin|system administrator|network administrator|qa automation|test automation|sap|salesforce|servicenow|data engineer|etl|power bi|tableau|informatica)\\b",
+    "dev_hint": "\\b(spring boot|react|angular|frontend|full ?stack|microservices for|crud|business logic|customer-facing app)\\b",
+    "title_drop_label": "management/presales title",
+    "out_of_domain_label": "out-of-domain title",
+    "dev_hint_label": "POSSIBLE-APP-DEV — judge domain, not title"
+  }
+}

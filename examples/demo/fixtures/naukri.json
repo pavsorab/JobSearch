@@ -1,0 +1,87 @@
+[
+ {
+  "jobId": "N1",
+  "title": "Ecommerce Delivery Manager",
+  "company": "Example Appliances Pvt Ltd",
+  "location": "Bengaluru",
+  "portalUrl": "https://n/1",
+  "createdDate": "5 hours ago",
+  "description": "Lead SAP Commerce (Hybris) D2C rollouts and go-live. Own solution design with stakeholders. Headless migration to commercetools and Contentstack CMS. GraphQL integrations. Agile, JIRA. 10+ years e-commerce. QA and UAT coordination. Checkout and payment gateway flows.",
+  "experienceText": "10-15 Yrs",
+  "companyType": "213",
+  "skills": [
+   "Hybris",
+   "D2C"
+  ]
+ },
+ {
+  "jobId": "N2",
+  "title": "SAP Hybris Functional Consultant",
+  "company": "Commerce Partners",
+  "location": "Bangalore/Bengaluru",
+  "portalUrl": "https://n/2",
+  "createdDate": "7 hours ago",
+  "description": "",
+  "experienceText": "10-16 Yrs",
+  "companyType": "60",
+  "skills": [
+   "SAP Hybris",
+   "Rollout",
+   "UAT",
+   "JIRA",
+   "Agile",
+   "GraphQL"
+  ]
+ },
+ {
+  "jobId": "N3",
+  "title": "Kubernetes Platform Engineer",
+  "company": "InfraWorks",
+  "location": "Bengaluru",
+  "portalUrl": "https://n/3",
+  "createdDate": "6 hours ago",
+  "description": "",
+  "experienceText": "8-13 Yrs",
+  "companyType": "62",
+  "skills": [
+   "Kubernetes",
+   "Terraform",
+   "ArgoCD",
+   "Go",
+   "Helm"
+  ]
+ },
+ {
+  "jobId": "N4",
+  "title": "DevOps Engineer (Contract)",
+  "company": "Staffy",
+  "location": "Bengaluru",
+  "portalUrl": "https://n/4",
+  "createdDate": "6 hours ago",
+  "description": "",
+  "experienceText": "5-8 Yrs",
+  "skills": [
+   "Kubernetes",
+   "Terraform",
+   "Jenkins"
+  ]
+ },
+ {
+  "jobId": "N5",
+  "title": "Test Manager",
+  "company": "QualityFirst",
+  "location": "Pune",
+  "portalUrl": "https://n/5",
+  "createdDate": "sometime recently",
+  "description": "",
+  "experienceText": "12-20 Yrs",
+  "companyType": "217",
+  "skills": [
+   "QA",
+   "STLC",
+   "UAT",
+   "Agile",
+   "e-commerce"
+  ]
+ }
+]

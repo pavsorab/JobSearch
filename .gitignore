@@ -1,0 +1,14 @@
+# Personal data: never committed. Only the README stays tracked.
+profiles/*
+!profiles/README.md
+.env
+.claude/settings.local.json
+
+# Generated
+examples/demo/runs/
+examples/demo/results/
+examples/demo/output/
+__pycache__/
+*.pyc
+.DS_Store
+build/

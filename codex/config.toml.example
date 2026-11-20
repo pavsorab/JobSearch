@@ -1,0 +1,15 @@
+# Codex CLI settings for JobSearch. Merge into ~/.codex/config.toml.
+# Key names change between Codex releases: verify against the current Codex docs.
+
+# apify_fetch.py needs to reach api.apify.com.
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+network_access = true
+
+# Secrets come from JobSearch/.env (read by the scripts), so no env passthrough is
+# needed. Codex strips variables named *TOKEN* by default; .env sidesteps that.
+
+# Optional: Overleaf publishing via olcli (npm install -g @aloth/olcli).
+# [mcp_servers.olcli]
+# command = "olcli-mcp"

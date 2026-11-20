@@ -1,0 +1,111 @@
+% <Your Name> -- Master CV / source of truth for job-specific CV generation.
+% Comprehensive on purpose: no two-page limit here. Tailored CVs select from it.
+%
+% CONTRACT (jptools.py scaffold and check-tex rely on these; keep them):
+%  - The footer line reads exactly:  \fancyfoot[L]{\small <Your Name> --- Master CV}
+%    where <Your Name> equals `name` in profile.json.
+%  - The header block contains the line  {\large Master CV}  (it becomes the
+%    tailored CV's headline).
+%  - The contact block sits between the start of the document body and the
+%    first section heading. Don't write LaTeX commands in these comments.
+%  - Use only the packages below; tailored CVs may not add packages.
+%  - Experience entries use \role{Company}{Title}{Dates}{Location}; skills use
+%    \skill{Group}{items}.
+%
+% TAILORING RULES
+% 1. Select/reorder relevant evidence; retain employer names, titles and dates.
+% 2. Preserve qualifiers ("around 30", "20+", POC, proposed, "contributed to").
+% 3. Skills without a project example must not become employer-specific claims.
+% 4. These comments are internal metadata; never copy them into a tailored CV.
+%
+% SOURCE DISCREPANCIES / ITEMS TO CONFIRM
+% - (list anything the resume leaves unclear, so tailoring asks before using it)
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\IfFileExists{glyphtounicode.tex}{\input{glyphtounicode}}{}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\small Alex Example --- Master CV}
+\fancyfoot[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{22pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=4pt,topsep=4pt,parsep=0pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{15pt}{7pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{9pt}{3pt}
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\emergencystretch}{2em}
+
+% Plain, single-column text: employer and dates are not placed in tables.
+\newcommand{\role}[4]{%
+  \Needspace{6\baselineskip}%
+  {\large\textbf{#1}}\par
+  \textbf{#2}\par
+  #3 \quad\textbar\quad #4\par
+}
+\newcommand{\skill}[2]{\item \textbf{#1:} #2}
+
+\begin{document}
+
+\begin{center}
+  {\Huge\bfseries Alex Example}\\[5pt]
+  {\large Master CV}\\[6pt]
+  Bengaluru, India \quad\textbar\quad +00 00000 00000\\[3pt]
+  \href{mailto:alex@example.com}{alex@example.com}\\[3pt]
+  \href{https://www.linkedin.com/in/alex-example}{linkedin.com/in/alex-example}
+\end{center}
+
+\section{Professional Summary}
+Senior Platform Engineer building internal developer platforms on Kubernetes:
+reusable CI/CD workflows, GitOps delivery with Argo CD, and Terraform-managed
+infrastructure. Writes Go and Python tooling and Kubernetes operators.
+
+\section{Skills}
+\begin{itemize}
+  \skill{Platform}{Kubernetes, Helm, Argo CD, GitOps, Terraform}
+  \skill{Languages}{Go, Python, Bash}
+  \skill{Delivery}{GitHub Actions, Jenkins, release automation}
+  \skill{Observability}{Prometheus, Grafana, OpenTelemetry}
+\end{itemize}
+
+\section{Experience}
+
+\role{Example Motors}{Senior Platform Engineer}{March 2021 -- Present}{Bengaluru}
+\begin{itemize}
+  \item Built a self-service deployment platform on Kubernetes and Argo CD used by
+    around 40 product teams.
+  \item Wrote a Go operator that provisions per-team namespaces, quotas and
+    policies from a custom resource.
+  \item Replaced hand-written manifests with a Helm library chart and reusable
+    GitHub Actions workflows.
+\end{itemize}
+
+\role{Sample Systems}{DevOps Engineer}{June 2016 -- February 2021}{Pune}
+\begin{itemize}
+  \item Moved Jenkins pipelines to GitHub Actions for 60+ repositories.
+  \item Managed AWS infrastructure with Terraform modules shared across teams.
+\end{itemize}
+
+\section{Education}
+\role{Example Institute of Technology}{B.E. Computer Science}{May 2014}{Bengaluru}
+
+\end{document}
